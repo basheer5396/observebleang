@@ -1,0 +1,16 @@
+<div class="container mt-3">
+    <div class="row">
+        <p class="h3 text-danger">Detailes of customers</p>
+        <h5>These data get from external api by services and observable concept for Testing by basheer</h5>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+<app-contact-list (sendContact)="SelectContact=$event"></app-contact-list>
+        </div>
+        <div class="col-md-3">
+<app-contact-card [selectedContact]="SelectContact"></app-contact-card>
+        </div>
+    </div>
+</div>
